@@ -1,0 +1,297 @@
+PS C:\Code\Python\Environment\AdvancedRAGWithMongoDB> c:\Code\Python\Environment\AdvancedRAGWithMongoDB\.venv\Scripts\Activate.ps1
+(.venv) PS C:\Code\Python\Environment\AdvancedRAGWithMongoDB> python .\RAGSentenceWindowRetrievalMongoDB.py                                                            
+Loading files: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  9.91file/s]
+==================
+Text 1: 
+Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors. 
+------------------
+Window 1: 
+Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.
+==================
+==================
+Text 2:
+This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.
+------------------
+Window 2:
+Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.
+==================
+==================
+Text 3:
+Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+
+------------------
+Window 3:
+Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+==================
+==================
+Text 4:
+Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.
+------------------
+Window 4:
+Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+==================
+==================
+Text 5:
+Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.
+------------------
+Window 5:
+This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+==================
+==================
+Text 6:
+Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Window 6:
+Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+==================
+Initiated Embedding Creation
+------------------
+Embedding Completed In 67.14 sec
+Embedding Saved in MongoDB Atlas Vector in 0.26 sec
+==================
+Question 1: 
+What types of vectors does Faiss specialize in handling?
+------------------
+Advanced RAG Response for Question 1: 
+Faiss specializes in handling dense vectors, particularly those encountered in high-dimensional machine learning applications like image recognition and recommendation systems.
+------------------
+Referenced Window for Question 1:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 1:
+Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+
+==================
+==================
+Question 2:
+Where can real-world application scenarios of Faiss be found?
+------------------
+Advanced RAG Response for Question 2: 
+The real-world application scenarios of Faiss can be found outlined in the Facebook Engineering blog post.
+------------------
+Referenced Window for Question 2:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 2:
+Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+
+==================
+==================
+Question 3:
+Who developed Faiss?
+------------------
+Advanced RAG Response for Question 3: 
+Facebook developed Faiss.
+------------------
+Referenced Window for Question 3:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 3:
+Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.
+==================
+==================
+Question 4:
+What hardware configurations does Faiss support?
+------------------
+Advanced RAG Response for Question 4: 
+Faiss supports both CPU and GPU implementations, ensuring scalability across different hardware configurations.
+------------------
+Referenced Window for Question 4:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 4:
+Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.
+==================
+==================
+Question 5:
+What techniques does Faiss use to accelerate similarity searches?
+------------------
+Advanced RAG Response for Question 5: 
+Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches.
+------------------
+Referenced Window for Question 5:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 5:
+Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.
+==================
+==================
+Question 6:
+What is the purpose of Faiss?
+------------------
+Advanced RAG Response for Question 6: 
+The purpose of Faiss is to provide an open-source library developed by Facebook for efficient similarity searches and clustering of dense vectors in machine learning applications, particularly those involving high-dimensional vectors like image recognition and recommendation systems. It offers features like scalability, flexibility, and support for both CPU and GPU implementations, allowing users to conduct both exact and approximate similarity searches based on their specific requirements.      
+------------------
+Referenced Window for Question 6:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 6:
+Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+
+==================
+==================
+Question 7:
+What challenges does Faiss address in machine learning applications?
+------------------
+Advanced RAG Response for Question 7: 
+Faiss addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.
+------------------
+Referenced Window for Question 7:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.
+------------------
+Original Response Sentence for Question 7:
+This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.
+==================
+==================
+Question 8:
+How does Faiss support scalability in large datasets?
+------------------
+Advanced RAG Response for Question 8: 
+Faiss supports scalability in large datasets by offering support for both CPU and GPU implementations.
+------------------
+Referenced Window for Question 8:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 8:
+Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.
+==================
+==================
+Question 9:
+What options does Faiss offer for similarity searches?
+------------------
+Advanced RAG Response for Question 9: 
+Faiss offers options for both exact and approximate similarity searches.
+------------------
+Referenced Window for Question 9:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 9:
+Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.
+==================
+==================
+Question 10:
+What features make Faiss valuable for machine learning and data analysis tasks?
+------------------
+Advanced RAG Response for Question 10: 
+Faiss is valuable for machine learning and data analysis tasks due to its widespread applicability, scalability, and flexibility. It offers support for both CPU and GPU implementations, ensuring scalability across different hardware configurations. Additionally, Faiss provides options for both exact and approximate similarity searches, allowing users to customize the level of precision according to their specific requirements.
+------------------
+Referenced Window for Question 10:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 10:
+Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+
+==================
+==================
+Question 11:
+How can users adjust the precision level in Faiss?
+------------------
+Advanced RAG Response for Question 11: 
+Users can adjust the precision level in Faiss by choosing between options for both exact and approximate similarity searches, allowing them to tailor the level of precision to their specific requirements.
+------------------
+Referenced Window for Question 11:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 11:
+Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.
+==================
+==================
+Question 12:
+What are some examples of real-world application scenarios of Faiss outlined in the Facebook Engineering blog post?
+------------------
+Advanced RAG Response for Question 12: 
+Real-world application scenarios of Faiss outlined in the Facebook Engineering blog post include image recognition and recommendation systems.
+------------------
+Referenced Window for Question 12:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.
+------------------
+Original Response Sentence for Question 12:
+This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.
+==================
+==================
+Question 13:
+What is Faiss?
+------------------
+Advanced RAG Response for Question 13: 
+Faiss is an open-source library developed by Facebook for efficient similarity searches and clustering of dense vectors. It addresses challenges commonly encountered in machine learning applications involving high-dimensional vectors, such as image recognition and recommendation systems. Faiss offers features like scalability, flexibility, and support for both CPU and GPU implementations, making it a valuable tool for various machine learning and data analysis tasks.
+------------------
+Referenced Window for Question 13:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 13:
+Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.
+==================
+==================
+Question 14:
+In what types of systems is Faiss commonly used?
+------------------
+Advanced RAG Response for Question 14: 
+Faiss is commonly used in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  
+------------------
+Referenced Window for Question 14:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.
+------------------
+Original Response Sentence for Question 14:
+This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.
+==================
+==================
+Question 15:
+How does Faiss contribute to image recognition?
+------------------
+Advanced RAG Response for Question 15: 
+Faiss contributes to image recognition by providing efficient similarity searches and clustering of dense vectors. It addresses challenges commonly encountered in machine learning applications involving high-dimensional vectors, which are essential in tasks like image recognition. Faiss's advanced techniques like indexing and quantization accelerate similarity searches in large datasets, making it a valuable tool for image recognition systems.
+------------------
+Referenced Window for Question 15:
+ Faiss (Facebook AI Similarity Search) is an open-source library developed by Facebook, designed for efficient similarity searches and clustering of dense vectors.  This library addresses challenges commonly encountered in machine learning applications, particularly those involving high-dimensional vectors, such as image recognition and recommendation systems.  Its widespread applicability, combined with features like scalability and flexibility, makes it a valuable tool for various machine learning and data analysis tasks, as demonstrated in its real-world application scenarios outlined in the Facebook Engineering blog post.
+
+ Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.  Its versatility is evident in its support for both CPU and GPU implementations, ensuring scalability across different hardware configurations.  Faiss offers flexibility with options for both exact and approximate similarity searches, allowing users to tailor the level of precision to their specific requirements.
+------------------
+Original Response Sentence for Question 15:
+Faiss employs advanced techniques like indexing and quantization to accelerate similarity searches in large datasets.
+==================
+(.venv) PS C:\Code\Python\Environment\AdvancedRAGWithMongoDB>

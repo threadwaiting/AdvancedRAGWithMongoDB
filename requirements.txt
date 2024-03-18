@@ -1,0 +1,9 @@
+llama-index
+llama-index-vector-stores-mongodb
+llama-index-embeddings-openai
+pymongo
+llama-index-readers-web
+sentence-transformers
+torch -f https://download.pytorch.org/whl/cu121/torch_stable.html
+torchvision -f https://download.pytorch.org/whl/cu121/torch_stable.html
+torchaudio -f https://download.pytorch.org/whl/cu121/torch_stable.html
