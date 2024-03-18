@@ -1,2 +1,2 @@
-# AdvancedRAGWithMongoDB
-Advanced RAG With Mongo DB Atlas
+# Advanced Retrieval-Augmented Generation (RAG) With MongoDB Atlas and LlamaIndex
+
