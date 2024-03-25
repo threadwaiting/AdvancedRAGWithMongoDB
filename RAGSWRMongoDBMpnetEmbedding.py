@@ -11,6 +11,8 @@ from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.llms.openai import OpenAI
 from llama_index.vector_stores.mongodb import MongoDBAtlasVectorSearch
 from pymongo import MongoClient
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+
 
 # Note: Store the OpenAi API key in the Environment Variables
 
@@ -19,7 +21,7 @@ Settings.llm = OpenAI(model="gpt-3.5-turbo", temperature=0.1)
 # When you set it higher, you'll get more random outputs.
 # When you set it lower, towards 0, the values are more deterministic.
 
-Settings.embed_model = OpenAIEmbedding(model="text-embedding-3-small", dimensions=256)
+Settings.embed_model = HuggingFaceEmbedding(model_name="sentence-transformers/all-mpnet-base-v2")
 
 # MongoDB Atlas Connection Details
 mongodb_conn_string = (
